@@ -1,0 +1,568 @@
+h1,h2,h3,h4,p {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    .header__socialLinks {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 40px;
+
+        a {
+            margin-left: 10px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #545454;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .header__nav {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-right: 40px;
+
+        a {
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+            margin-left: 15px;
+            text-decoration: none;
+        }
+    }
+
+    .header__images {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        max-height: 220px;
+        overflow: visible;
+
+        .images__detective {
+            background-image: url('../images/detective_silhouette-noBG-solo.png');
+            width: 20%;
+            height: 200px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+
+        .images__outline {
+            background-image: url('../images/whiteOutline.png');
+            width: 75px;
+            height: 150px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            transform: rotate(90deg);
+            align-self: flex-end;
+            margin-left: 70px;
+            margin-right: 70px;
+            border: 1px solid black;
+            background-color: #fff2cc;
+            border-radius: 50%;
+        }
+    }
+}
+
+body {
+    .home__steps {
+        display: flex;
+        padding: 15px 80px;
+        justify-content: space-between;
+        background-color: #ab3939;
+        border-top: 8px solid black;
+        border-bottom: 8px solid black;
+
+        .step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2 {
+                font-size: 25px;
+                margin-bottom: 10px;
+                text-shadow: .5px .5px white;
+            }
+
+            p {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            .img {
+                width: 120px;
+                height: 120px;
+                border: 3px solid black;
+                border-radius: 50%;
+                background-color: white;
+
+                background-position: center center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            .img--file {
+                background-image: url(../images/file.jpg);
+            }
+
+            .img--warrant {
+                background-image: url(../images/warrant.jpg);
+            }
+
+            .img--badge {
+                background-image: url(../images/badge.png);
+            }
+        }
+    }
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 40px;
+
+    h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .hours {
+        > div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+    }
+
+    .contact {
+        text-align: right;
+
+        .email {
+            text-decoration: underline;
+        }
+
+        a, p {
+            margin-bottom: 15px;
+        }
+
+        .socialLinks {
+            display: flex;
+            justify-content: flex-end;
+            a {
+                min-width: 25px;
+                min-height: 25px;
+                border-radius: 50%;
+                background-color: white;
+                color: black;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 10px;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .whiteLogo {
+        width: 250px;
+        height: 250px;
+        background-image: url('../images/whitePrivate.png');
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+header {
+    border-top: 15px solid black;
+
+    .header__nav {
+        background: linear-gradient(180deg, rgba(187,187,187,1) 0%, rgba(118,118,118,1) 100%);
+    }
+
+    .images__lamp {
+        background-image: url('../images/lamp.png');
+        background-size: cover;
+        min-height: 300px;
+        width: 40px;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+    }
+
+}
+
+.indexPage {
+    padding: 15px 80px;
+    background-color: #d9d9d9;
+
+    h1,h2 {
+        padding-left: 60px;
+    }
+
+    .main {
+        display: flex;
+        padding-top: 20px;
+
+        .img {
+            min-width: 250px;
+            min-height: 350px;
+            background-image: url('../images/PhesterRock.jpg');
+            background-size: cover;
+            background-position: center center;
+            border: 10px solid white;
+            border-radius: 4px;
+        }
+
+        .info {
+            margin-left: 30px;
+
+            p {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+.home__caseFiles {
+    padding: 15px 80px;
+    background-color: #d9d9d9;
+
+    h2 {
+        text-align: center;
+        color: #ff0000;
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+    .files {
+        display: flex;
+        justify-content: space-between;
+
+        .caseFiles__file {
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            background-color: #8b8787;
+            
+            h3 {
+                text-align: center;
+            }
+
+            .fileImage {
+                margin: 0 auto;
+                width: 90%;
+                height: 150px;
+                background-image: url('../images/file.jpg');
+                background-size: contain;
+                background-position: center center;
+            }
+        }
+    }
+}
+
+.home__subscribe {
+    display: flex;
+    height: 180px;
+    justify-content: center;
+    align-items: center;
+    border-top: 15px solid black;
+    border-bottom: 15px solid black;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .input {
+        display: flex;
+        
+        input {
+            flex-grow: 1;
+            margin-right: 20px;
+            padding-left: 10px;
+        }
+
+        input, button {
+            min-height: 40px;
+        }
+
+        button {
+            background-color: #464646;
+            border: none;
+            color: white;
+            width: 100px;
+        }
+    }
+}
+
+.home__blog {
+    display: flex;
+    padding: 15px 80px;
+    justify-content: space-between;
+
+    .blog__items {
+        display: flex;
+        justify-content: space-between;
+
+        .items__item {
+            p {
+                margin-bottom: 8px;
+                text-align: center;
+                color: #ac3939;
+                font-weight: bold;
+            }
+        }
+
+        .itemImg {
+           width: 200px;
+           height: 200px;
+           background-position: center center;
+           background-size: contain; 
+        }
+
+        .item__room {
+            background-image: url('../images/escaperoom.png');
+        }
+
+        .item__game {
+            background-image: url('../images/detectiveboardgame.jpeg')
+        }
+    }
+
+    .blog__resources {
+
+        .resources {
+            border: 2px solid black;
+            background-color: #d9d9d9;
+            padding: 10px 18px;
+            border-radius: 25px;
+
+            li {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    h2 {
+        color: #ff0000;
+        margin-bottom: 8px;
+    }
+}
+
+.howToPlay {
+    padding: 25px 40px;
+    border-top: 10px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        border: 1px solid #929292;
+        background-color: #d9d9d9;
+        padding: 5px 8px;
+        border-radius: 4px;
+        color: #00abff;
+        font-weight: bold;
+    }
+
+    .playStep {
+        display: flex;
+        align-items: center;
+
+        h3 {
+            margin-bottom: 10px;
+        }
+
+        .img {
+            min-width: 200px;
+            min-height: 200px;
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+            margin-left: 30px;
+        }
+
+        .img--paper {
+            background-image: url('../images/paper.jpg');
+        }
+
+        .img--file {
+            background-image: url('../images/file.jpg');
+        }
+
+        .img--glass {
+            background-image: url('../images/glass.jpg');
+        }
+
+        .img--warrant {
+            background-image: url('../images/warrantPaper.jpg');
+        }
+    }
+
+    .playStep--rev {
+        flex-direction: row-reverse;
+
+        .img {
+            margin: 0;
+            margin-right: 30px;
+        }
+    }
+}
+
+.caseFiles {
+    padding: 20px 80px;
+    border-top: 10px solid black;
+    h2 {
+        color: #ab3939;
+        font-size: 35px;
+        margin-bottom: 40px;
+    }
+
+    .img {
+        min-width: 250px;
+        min-height: 250px;
+        background-image: url('../images/file.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .file {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .info {
+            h3 {
+                font-size: 25px;
+                margin-bottom: 15px;
+            }
+            p {
+                font-size: 18px;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 10px;
+                color: #ab3939;
+                margin-bottom: 8px;
+            }
+            .black {
+                color: black;
+                margin-bottom: 15px;
+            }
+
+            button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 120px;
+                height: 35px;
+                font-size: 16px;
+                color: white;
+                font-weight: bold;
+                border: none;
+                border-radius: 4px;
+                background-color: #ab3939;
+                margin: 0 auto;
+            }
+
+        }
+
+        .requirement {
+            h3 {
+                color: #ab3939;
+                font-size: 25px;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+
+            p {
+                color: black;
+                font-weight: bold;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.contactUs {
+    padding: 30px 40px;
+    border-top: 20px solid black;
+
+    >h3 {
+        color: #ab3939;
+        font-size: 45px;
+        margin-bottom: 30px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+    
+        .socialMedia {
+            div {
+                min-width: 300px;
+                min-height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #8b8787;
+                margin-bottom: 30px;
+                border: 1px solid black;
+            }
+        }
+    
+        .contactUsForm {
+            margin-right: 50px;
+    
+            form {
+                p {
+                    margin-bottom: 5px;
+                }
+    
+                input {
+                    width: 100%;
+                    height: 40px;
+                    margin-bottom: 20px;
+                    background-color: #f4f8fb;
+                    border: 1px solid #e9ebed;
+                    border-radius: 3px;
+                }
+            }
+
+            button {
+                border: none;
+                background-color: #ff7959;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100px;
+                height: 40px;
+                color: white;
+                font-weight: bold;
+                border-radius: 3px;
+                margin-top: 50px;
+            }
+        }
+    }
+}

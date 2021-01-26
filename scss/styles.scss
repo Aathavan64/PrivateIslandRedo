@@ -11,6 +11,11 @@ body {
     margin: 0;
 }
 
+body > * {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 header {
     .header__socialLinks {
         display: flex;
@@ -315,6 +320,175 @@ header {
         }
     }
 }
+
+.blog__body {
+  padding: 20px 20px;
+  max-width: 1280px;
+  margin: 0 auto;
+    background-color: #8b8787;
+
+    > h3 {
+        font-size: 35px;
+        margin-bottom: 20px;
+        color: #ab3939;
+    }
+
+  .blog__main {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: white;
+    .main__topPost {
+      background-color: #eaf0f6;
+      width: 74%;
+      .topPost__image {
+        background-image: url("../../assets/blog__top.webp");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 800px;
+        height: 500px;
+      }
+      .topPost__title {
+        margin-bottom: 40px;
+      }
+      .topPost__info {
+      }
+      .topPost__infoContainer {
+        padding: 20px 15px;
+        max-width: 800px;
+      }
+    }
+
+    .main__blogLists {
+        width: 24%;
+
+      .blogList {
+        .blogList__title {
+          display: flex;
+          align-items: center;
+          height: 25px;
+          padding-left: 10px;
+          margin-bottom: 15px;
+          color: white;
+          background-color: #ff7a59;
+          width: 100%;
+        }
+        .blogList__article {
+          background-color: #eaf0f6;
+          padding: 20px 20px;
+          margin-bottom: 15px;
+          width: 100%;
+          .article__title {
+            font-size: 12pt;
+            font-weight: normal;
+            margin-bottom: 8px;
+          }
+          .article__info {
+            font-size: 13pt;
+            text-transform: uppercase;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .main__blogLists .blogList:first-child {
+      padding-bottom: 20px;
+    }
+  }
+  .blog__secondary {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    .secondary__blogPost {
+      width: 33%;
+      background-color: #eaf0f6;
+
+      .blogPost__img {
+        background-image: url("../../assets/officeblog.webp");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 300px;
+      }
+      .blogPost__title {
+        margin-top: 20px;
+        padding-left: 10px;
+      }
+      .blogPost__info {
+        margin-bottom: 20px;
+        padding-left: 10px;
+      }
+    }
+    .secondary__subscribe {
+      width: 33%;
+      background-color: #f96a59;
+      padding: 20px 8px;
+      padding-top: 0px;
+
+      .emailHeader {
+        border-bottom: 1px solid white;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        margin-bottom: 30px;
+      }
+      .subscribe__services {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .services__service {
+          font-size: 14pt;
+          color: white;
+          width: 48%;
+          margin-bottom: 20px;
+
+          input {
+            border: none;
+            border-radius: 3px;
+            margin-right: 10px;
+          }
+        }
+      }
+      .subscribe__emailInput {
+        h2 {
+          color: white;
+          margin-bottom: 8px;
+        }
+        input {
+          border: none;
+          color: black;
+          border-radius: 3px;
+          width: 100%;
+          height: 30px;
+          padding-left: 10px;
+          margin-bottom: 10px;
+          background-color: white;
+        }
+      }
+      .subscribe__info {
+        color: white;
+        margin-bottom: 10px;
+      }
+      .subscribe__button {
+        border: none;
+        box-shadow: none;
+        border-radius: 3px;
+        color: black;
+        width: 100%;
+        height: 70px;
+        background-color: white;
+      }
+    }
+  }
+}
+
 
 .home__blog {
     display: flex;
